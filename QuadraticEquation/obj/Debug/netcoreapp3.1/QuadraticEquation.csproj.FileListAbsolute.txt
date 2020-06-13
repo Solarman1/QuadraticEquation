@@ -10,9 +10,4 @@ C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquat
 C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquation.dll
 C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquation.pdb
 C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquation.genruntimeconfig.cache
-C:\c#\QuadraticEquation\QuadraticEquation\bin\Debug\netcoreapp3.1\xunit.abstractions.dll
-C:\c#\QuadraticEquation\QuadraticEquation\bin\Debug\netcoreapp3.1\xunit.assert.dll
-C:\c#\QuadraticEquation\QuadraticEquation\bin\Debug\netcoreapp3.1\xunit.core.dll
-C:\c#\QuadraticEquation\QuadraticEquation\bin\Debug\netcoreapp3.1\xunit.execution.dotnet.dll
 C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquation.csproj.CoreCompileInputs.cache
-C:\c#\QuadraticEquation\QuadraticEquation\obj\Debug\netcoreapp3.1\QuadraticEquation.csproj.CopyComplete
