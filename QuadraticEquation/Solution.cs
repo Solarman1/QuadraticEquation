@@ -1,81 +1,50 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata;
-using System.Text;
 
 namespace QuadraticEquation
 {
     public class Solution
     {
-        //private double A { get; set; }
-        //private double B { get; set; }
-        //private double C { get; set; }
-
-        private double x;
-        private double x2;
+        private double A { get; set; }
+        private double B { get; set; }
+        private double C { get; set; }
 
         private string result;
 
-        public Solution(/*double a, double b, double c*/)
+        public string get_Equation
         {
-            //this.A = a;
-            //this.B = b;
-            //this.C = c;
-            //Equation(A,B,C);
+            get
+            {
+                return Equation();
+            }
         }
 
-        //private void Enter()
-        //{
-        //    try
-        //    {
-        //        Console.WriteLine("Для остановки программы нажмите ctr+c");
-        //        Console.WriteLine($"уровнение: ax^2+bx+c");
-        //        Console.Write("Введите a = ");
+        DiscriminantAboveZero discriminantAboveZero = new DiscriminantAboveZero();
+        DiscriminantEqualZero discriminantEqualZero = new DiscriminantEqualZero();
 
-        //        A = Convert.ToDouble(Console.ReadLine());
-
-        //        Console.Write("Введите b = ");
-        //        B = Convert.ToDouble(Console.ReadLine());
-
-        //        Console.Write("Введите c = ");
-        //        C = Convert.ToDouble(Console.ReadLine());
-        //    }
-        //    catch(FormatException e)
-        //    {
-        //        Console.WriteLine(e.Message+("\nНеправильно набран символ, используйте запятую"));
-                
-        //        Equation(A,B,C);
-        //    }
-
-        //    Console.WriteLine($"\nуровнение: {A}x^2+{B}x+{C}");
-        //}
-        public string Equation(double A, double B, double C)
+        public Solution(double a, double b, double c)
+        {
+            this.A = a;
+            this.B = b;
+            this.C = c;
+        }
+   
+        private string Equation()
         {
             
             double D = Math.Pow(B, 2) - 4*A*C;
-            if(D < 0)
-            {
-                Console.WriteLine("Нет корней");
-                return result = "Нет корней";
-                //Equation();
-            }
-            else if(D == 0)
-                {
-                    x = -B / 2*A;
-                    Console.WriteLine($"Дискреминант равен 0, корень = {x}");
-                    return result =  $"{x}";
-                //Equation();
-            }
-                else if(D > 0)
-                    {
-                        x  = ((-B - Math.Sqrt(D)) / (2 * A));
-                        x2 = ((-B + Math.Sqrt(D)) / (2 * A));
 
-                        Console.WriteLine($"Дискриминант = {D}, первый корень x = {x},\n второй корень x2 = {x2}");
-                        return result = $"{D},{x},{x2}";
-                //Equation();
+            if (D < 0)
+            {
+                Console.WriteLine("equation not have solution , D < 0");
+                return result = "equation not have solution";
+                
+            }
+            else
+            {
+                result = (D == 0 ? discriminantEqualZero.EquationResulter(D, A, B) : discriminantAboveZero.EquationResulter(D, A, B));
             }
             return result;
         }
+       
     }
 }
