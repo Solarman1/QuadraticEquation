@@ -9,7 +9,7 @@ namespace QuadraticEquation
             double x, x2;
             string result;
 
-            x = ((-b - Math.Sqrt(D)) / (2 * a));
+            x  = ((-b - Math.Sqrt(D)) / (2 * a));
             x2 = ((-b + Math.Sqrt(D)) / (2 * a));
 
             Console.WriteLine($" Discriminant equals = {D},\n first x = {x},\n second x2 = {x2}");
