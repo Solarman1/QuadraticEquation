@@ -17,9 +17,8 @@ namespace QuadraticEquation
                 Console.Write("Enter value for c = ");
                 double C = Convert.ToDouble(Console.ReadLine());
 
-                Solution equation = new Solution(A, B, C);
 
-                string result = equation.get_Equation;
+                string result = new Solution().Equation(A, B, C);
 
                 Console.WriteLine($"result -> {result}");
 

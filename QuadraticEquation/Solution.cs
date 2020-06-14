@@ -4,34 +4,15 @@ namespace QuadraticEquation
 {
     public class Solution
     {
-        private double A { get; set; }
-        private double B { get; set; }
-        private double C { get; set; }
 
         private string result;
 
-        public string get_Equation
-        {
-            get
-            {
-                return Equation();
-            }
-        }
-
         DiscriminantAboveZero discriminantAboveZero = new DiscriminantAboveZero();
         DiscriminantEqualZero discriminantEqualZero = new DiscriminantEqualZero();
-
-        public Solution(double a, double b, double c)
-        {
-            this.A = a;
-            this.B = b;
-            this.C = c;
-        }
    
-        private string Equation()
+        public string Equation(double A, double B, double C)
         {
-            
-            double D = Math.Pow(B, 2) - 4*A*C;
+            double D = Math.Pow(B, 2) - 4 * A * C;
 
             if (D < 0)
             {
