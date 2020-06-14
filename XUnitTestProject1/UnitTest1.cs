@@ -60,21 +60,5 @@ namespace XUnitTestProject1
             ////Assert
             Assert.Equal("12, -3,732050807568877, -0,2679491924311228", result);
         }
-
-        //[Fact]
-        //public void Test5()
-        //{
-        //    //Arrange
-        //    Solution equation = new Solution();
-
-        //    //Act
-        //    double testingA = Convert.ToDouble(Console.ReadLine());
-        //    double testingB = Convert.ToDouble(Console.ReadLine());
-        //    double testingC = Convert.ToDouble(Console.ReadLine());
-
-
-        //    //Assert
-        //    Assert.True(true,equation.Equation(testingA,testingB,testingC));
-        //}
     }
 }
