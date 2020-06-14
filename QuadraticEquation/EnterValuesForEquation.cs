@@ -23,13 +23,13 @@ namespace QuadraticEquation
 
                 Console.WriteLine($"result -> {result}");
 
-                Console.WriteLine($"\nEquation: {A}x^2+{B}x+{C}");
+                Console.WriteLine($"\n Equation: {A}x^2+{B}x+{C}");
 
                 ReuseEquation.Resue();
             }
             catch (FormatException e)
             {
-                Console.WriteLine(e.Message + ("\nincorrectly typed symbol"));
+                Console.WriteLine(e.Message + ("\n incorrectly typed symbol"));
                 Enter();
             }
         }

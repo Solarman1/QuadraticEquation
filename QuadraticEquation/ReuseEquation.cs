@@ -6,7 +6,7 @@ namespace QuadraticEquation
     {
         public static void Resue()
         {
-            Console.Write("For reuse type -> r: ");
+            Console.Write("For reuse, type -> r: ");
             try 
             { 
                 char reuse = Convert.ToChar(Console.ReadLine());
@@ -17,7 +17,7 @@ namespace QuadraticEquation
             }
             catch(FormatException e)
             {
-                Console.WriteLine(e.Message + ("\nincorrectly typed symbol, typed -> r"));
+                Console.WriteLine(e.Message + ("\n incorrectly typed symbol, typed -> r"));
             }
         }
     }
